@@ -18,7 +18,7 @@ samir.codes - a starlab portfolio project.
 
 ![screenshot]()
 
-## How To Use
+## How To Use 🧑‍💻
 
 ```bash
 # Clone this repository
@@ -31,7 +31,7 @@ $ domain: https://samir.codes
 
 ```
 
-## Key Features
+## Key Features 📰
 
 * Good file structure.
 * Clean & Easy to understand code.
@@ -44,8 +44,8 @@ $ domain: https://samir.codes
 - [Learn Github](https://github.com/samiscold/github.course) - A mini project to get familiar with github
 - [JS form Validation](https://github.com/samiscold/ubt-website-web-project) - University Web project.
 
-<br>
 
+## Stay connected.
 > GitHub [@samiscold](https://github.com/samiscold) &nbsp;&middot;&nbsp;
 > LinkedIn [@Samir Vllaço](https://www.linkedin.com/in/samirvlla%C3%A7o/)
 
