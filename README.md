@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-samir.codes - starlab portfolio project.
+samir.codes - a starlab portfolio project.
 <br>
 </h1>
 
@@ -18,7 +18,7 @@ samir.codes - starlab portfolio project.
 
 ![screenshot]()
 
-## How To Use
+## How To Use 🧑‍💻
 
 ```bash
 # Clone this repository
@@ -31,7 +31,7 @@ $ domain: https://samir.codes
 
 ```
 
-## Key Features
+## Key Features 📰
 
 * Good file structure.
 * Clean & Easy to understand code.
@@ -45,6 +45,7 @@ $ domain: https://samir.codes
 - [JS form Validation](https://github.com/samiscold/ubt-website-web-project) - University Web project.
 
 
+## Stay connected.
 > GitHub [@samiscold](https://github.com/samiscold) &nbsp;&middot;&nbsp;
 > LinkedIn [@Samir Vllaço](https://www.linkedin.com/in/samirvlla%C3%A7o/)
 
