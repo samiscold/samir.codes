@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-samir.codes - starlab portfolio project.
+samir.codes - a starlab portfolio project.
 <br>
 </h1>
 
@@ -44,6 +44,7 @@ $ domain: https://samir.codes
 - [Learn Github](https://github.com/samiscold/github.course) - A mini project to get familiar with github
 - [JS form Validation](https://github.com/samiscold/ubt-website-web-project) - University Web project.
 
+<br>
 
 > GitHub [@samiscold](https://github.com/samiscold) &nbsp;&middot;&nbsp;
 > LinkedIn [@Samir Vllaço](https://www.linkedin.com/in/samirvlla%C3%A7o/)
