@@ -11,34 +11,52 @@
 }
 
 body {
-    margin:0;
-    padding:0;
-    font-family: 'lucida',sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'lucida', sans-serif;
     background: #0C0D0D;
     color: #CCCCCB;
 }
 
 header {
-    margin:0;
+    margin: 0;
     height: 50px;
     background-color: #333333;
-    margin:0;
-    padding-right:15px;
+    margin: 0;
+    padding-right: 15px;
     display: flex;
     justify-content: space-between;
-
-
 }
 
 nav {
-    bottom:0;
+    bottom: 0;
     display: flex;
     align-self: end;
 }
 
+/* nav icons */
+.shtoje-x {
+    display: inline-block;
+    width: 11px;
+    rotate: 45deg;
+    margin: 0 24px;
+    cursor: pointer;
+}
+
+.anuloje-x {
+    width: 11px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.mshele-x {
+    width: 15px;
+    cursor: pointer;
+}
+
 ul {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     margin-right: 5px;
     height: auto;
     display: flex;
@@ -46,31 +64,29 @@ ul {
     align-self: center;
     margin-left: 10px;
     list-style-type: none;
-    
 }
 
 li {
     line-height: 40px;
-    background:#0C0D0D;
-    border-top-right-radius:6px;
+    background: #0C0D0D;
+    border-top-right-radius: 6px;
     padding-right: 12px;
     padding-left: 22px;
     width: auto;
 }
 
 ul li a {
-    cursor: alias;  
+    cursor: alias;
     font-size: 0.9rem
 }
 
 
+/*first section*/
 section {
     height: 100vh;
-    font-size:1rem;
-    margin:0 32px;
+    font-size: 1rem;
+    margin: 0 32px;
 }
-
-
 
 .question {
     width: 50px;
@@ -79,28 +95,62 @@ section {
     border-radius: 100%;
     text-align: center;
     line-height: 50px;
-    bottom:22px;
-    right:32px;
-    color:#CCCCCB;
-    border:2px solid #CCCCCB;
+    bottom: 22px;
+    right: 32px;
+    color: #CCCCCB;
+    border: 2px solid #CCCCCB;
 }
 
-.shtoje-x {
-    display: inline-block;
-    width: 11px;
-    rotate: 45deg;
-    margin:0 24px;
-    cursor: pointer;
+.hello,
+.helloo {
+    height: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Lucida Sans';
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, .70);
 }
 
-.anuloje-x {
-    width: 11px;
-    margin-left:10px;
-    cursor: pointer;
+.second-text {
+    margin-top: 25px;
 }
 
-.mshele-x {
-    width:15px;
-    cursor: pointer;
+/* Animation */
+.helloo {
+    animation: animated-text 650ms steps(24, end) 1s 1 normal both
 }
 
+.hello {
+    animation: animated-text 650ms steps(70, end) 2s 1 normal both
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    nav {
+        align-self:unset;
+    }
+    .mshele-x {
+    display:none;
+}
+
+ ul {
+    display: flex;
+    align-self: end;
+ }
+
+ li {
+     width: 80%;
+     line-height: 50px;
+ }
+}
