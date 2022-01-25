@@ -23,13 +23,17 @@ header {
     height: 50px;
     background-color: #333333;
     margin:0;
-    padding:0;
-    position:relative;
+    padding-right:15px;
+    display: flex;
+    justify-content: space-between;
+
+
 }
 
 nav {
-    position:absolute;
     bottom:0;
+    display: flex;
+    align-self: end;
 }
 
 ul {
@@ -41,6 +45,7 @@ ul {
     flex-direction: row;
     align-self: center;
     margin-left: 10px;
+    list-style-type: none;
     
 }
 
@@ -51,21 +56,12 @@ li {
     padding-right: 12px;
     padding-left: 22px;
     width: auto;
-    list-style-type: none;
 }
 
 ul li a {
     cursor: alias;  
     font-size: 0.9rem
 }
-
-ul li img {
-    width: 11px;
-    margin-left:10px;
-}
-
-
-
 
 
 section {
@@ -95,6 +91,16 @@ section {
     rotate: 45deg;
     margin:0 24px;
     cursor: pointer;
-    
+}
+
+.anuloje-x {
+    width: 11px;
+    margin-left:10px;
+    cursor: pointer;
+}
+
+.mshele-x {
+    width:15px;
+    cursor: pointer;
 }
 
