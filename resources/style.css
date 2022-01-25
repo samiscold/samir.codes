@@ -24,7 +24,6 @@ body {
 
 header {
     margin: 0;
-    height: 10vh;
     background-color: #333333;
     margin: 0;
     padding-right: 15px;
@@ -71,12 +70,13 @@ ul {
 }
 
 li {
-    line-height: 40px;
     background: #0C0D0D;
     border-top-right-radius: 6px;
     padding-right: 12px;
-    padding-left: 22px;
+    padding-left: 0px;
     width: auto;
+    padding: 10px;
+    display: flex;
 }
 
 ul li a {
@@ -85,17 +85,26 @@ ul li a {
 }
 
 
-/*first section*/
-.second-section {
-    height: 60vh;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.cmd-icon {
+  width:20px;
+  padding-left:5px;
+  padding-right: 10px;
 }
 
+/*first section*/
 .first-section {
-    height:10vh;
+  margin: 3% 1%;
+}
+
+.second-section {
+}
+
+.third-section {
+
+}
+
+.fourth-section {
+
 }
 
 .question {
@@ -131,16 +140,6 @@ ul li a {
     animation: type2 3s steps(60, end);
   }
 
-  h1 {
-    width: 100%;
-    text-align: center;
-    white-space: nowrap;
-    font-size: 4rem;
-    animation: blink 3s;
-    margin:0;
-    height: auto;
-  }
-  
   p a{
     color: lime;
     text-decoration: none;
@@ -168,9 +167,9 @@ ul li a {
     nav {
         align-self:unset;
     }
-    .mshele-x {
+    /* .mshele-x {
     display:none;
-}
+} */
 
  ul {
     display: flex;
@@ -179,6 +178,14 @@ ul li a {
 
  li {
      width: 80%;
-     line-height: 50px;
+     line-height: auto;
+ }
+
+ .cmd-icon {
+   display:none;
+ }
+
+ .shtoje-x {
+   display:none;
  }
 }
