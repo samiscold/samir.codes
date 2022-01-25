@@ -5,11 +5,8 @@ function test() {
     var paragraph = document.createElement('p');
     paragraph.id = "wronginput";
     fixappend.appendChild(paragraph);
+    
     }
-
-function random() {
-    var randomCommands;
-}
 
 
 function myFunction() {
@@ -17,14 +14,11 @@ function myFunction() {
     console.log(inputi);
 
  
-var c = document.getElementById("wronginput");
 
 if (inputi === "color a"){
 for (let i = 0; i < pjat.length; i++) {
     pjat[i].style.color = 'lime'; // ja qet krejtve emrin 1 ka 1 loop
 }
-
-c.style.color = 'lime';
 return;
 }
 
@@ -47,7 +41,13 @@ if(inputi === "cls") {
 
 else {
     test();
+    if(inputi === "color a") {
+        pharagraph.style.color = 'lime';
+    }
     abc.innerHTML += "'" + inputi + "' is not recognized as an internal <br> or external command, p.s try <br>";
 }
 
 }
+
+
+// if cls i = 0

@@ -96,17 +96,6 @@ ul li a {
   margin: 3% 1%;
 }
 
-input {
-  background: transparent;
-  border:none;
-  color: #CCCCCB;
-  margin:10px 0;
-}
-
-input:focus,textarea:focus{
-  outline: none;
- }
-
 .second-section {
 }
 
