@@ -120,17 +120,20 @@ ul li a {
     border: 2px solid #CCCCCB;
 }
 
-.hello, .helloo, p {
+.hello, .helloo {
     color: #CCCCCB; 
     font-family: 'Lucida Sans';
     font-size: 1rem;
     margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
-    width: 30em;
+    width: 50em;
     animation: type 1s steps(60, end); 
   }
 
+  p {
+    width: 100%;
+  }
 
   p:nth-child(2){
     animation: type2 2s steps(60, end);
