@@ -20,7 +20,7 @@
             <img class="shtoje-x" src="resources/img/anuloje.svg">
         </nav>
 
-        <img class="mshele-x" src="resources/img/anuloje.svg">
+        <img onclick="closeFunction()" class="mshele-x" src="resources/img/anuloje.svg">
     </header>
 
     <main>
@@ -31,19 +31,24 @@
                 <p class="hello">(c) samir. All rights reserved. </p>
                 <p class="hello">github:\samir.starlabs\index.html</p>
 
-                <div class="about-me">
-                    <div class="img-border">
-                        <img class="pfp" src="resources/img/pfpdone.png" alt="">
-                    </div>
+                <div id="aboutme" class="about-me">
+                        <div class="img-border"> 
+                            <img class="pfp" src="resources/img/pfpdone.png" alt="">
+                        </div>
+                  
 
                     <div class="text-me">
                         <h1> Hello World</h1>
-                        <p>I am Samir Vllaço, a Computer Sciecne Student from Prizren.</p>
+                        <span>I am Samir Vllaço, a Computer Science Student from Prizren. <br>
+                            Passionate about Web and OOP.
+                            Currently learning Javascript & PHP. <br>
+                            In my free time I draw with css and drink ☕.
+                        </span>
                         <div class="contact">
-                            <i class='fa fa-linkedin'></i><a href="https://linkedin.com/in/samirvllaço " target="_blank">Linkedin </a>   |
+                            <i class='fa fa-linkedin'></i><a href="https://linkedin.com/in/samirvllaço " target="_blank">Linkedin </a>   -
                             <i class='fa fa-github'></i><a href="https://github.com/samiscold" target="_blank">Github<i class="icon-github"></i></a>
                           </div>
-                          
+
                     </div>
                    
                 </div>
@@ -57,6 +62,12 @@
 
           
                 <div class="question">?</div>
+
+
+                
+              <input class="cmd-input" type="text"  id="result" placeholder="search something">
+              <input onclick="myFunction()" value="search">
+
         </section>
 
         <section class="second-section">
@@ -64,11 +75,7 @@
            
 
 
-              <input type="text"  id="result" placeholder="color a?">
-              <input onclick="myFunction()" type="submit" />
         </section>
-
-
         <section></section>
         <section></section>
         <section></section>

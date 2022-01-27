@@ -57,6 +57,20 @@ nav {
     cursor: pointer;
 }
 
+/* #wronginput::inputi {
+  color: red;
+} */
+
+
+#wronginput span {
+  display: inline;
+  opacity: 0.6;
+}
+
+#wronginput {
+  color: #CCCCCB;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -167,26 +181,42 @@ input:focus,textarea:focus{
     display:flex;
     align-items: center;
     margin: 50px 0;
+    animation: up 500ms;
   }
 
   .text-me {
     margin:40px;
+    opacity: 0;
+    animation: left 500ms 1s;
+    animation-fill-mode: forwards;
   }
 
-  a {
+  .about-me a {
+    color: lime;
+    padding: 0 10px;
+  }
+
+  .about-me i {
     text-decoration: none;
     color: lime;
     padding: 0 10px;
   }
 
+  span {
+    display: block;
+    margin: 20px 0;
+  }
+
+
   .pfp {
     width:150px;
     height: 150px;
     filter: grayscale(1);
-    border-radius: 100%;
+    border-radius: 100px;
     display: inline;
     margin:0;
     padding:0;
+    z-index: 9999;
   }
 
   .contact {
@@ -198,7 +228,6 @@ input:focus,textarea:focus{
   }
 
   .img-border {
-    display: inline;
     width: 160px;
     height: 160px;
     background: lime;
@@ -206,8 +235,35 @@ input:focus,textarea:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
   }
 
+  .img-border:hover {
+    background-image: linear-gradient(to bottom right, lime,#CCCCCB );
+    background-size: 200% auto;
+    animation: shine 1s linear forwards;
+  }
+
+  .img-border:hover::after {
+   content: 'sup?';
+   font-size: 20px;
+   background: black;
+   position: absolute;
+   z-index: 99999999999;
+  }
+
+  .cmd-input {
+    border-bottom: 5px solid lime;
+  }
+
+
+
+
+  @keyframes shine {
+    to {
+      background-position: 300% center;
+    }
+  }
 
   @keyframes type{ 
     from { width: 0; } 
@@ -225,8 +281,41 @@ input:focus,textarea:focus{
     100%{ width: 100; } 
   }
 
+  
+  /*second animation */
+ 
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+
+  @keyframes up {
+  from {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+
+  @keyframes left {
+    from {
+      opacity:0;
+      transform: translateX(-200px);
+    }
+
+    to {
+      opacity:1;
+    }
+  }
+
+
 @media only screen and (max-width: 768px) {
 
+  html {
+    overflow-x:hidden;
+  }
+  header {
+    overflow: none;
+  }
     nav {
         align-self:unset;
     }
@@ -251,4 +340,21 @@ input:focus,textarea:focus{
  .shtoje-x {
    display:none;
  }
+
+ .about-me {
+ flex-direction: column;
+ align-items: initial;
+}
+
+.pfp {
+  width: 85px;
+  height: 85px;
+}
+.img-border {
+  width: 90px;
+  height: 90px;
+  margin:40px;
+}
+
+
 }
