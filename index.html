@@ -15,9 +15,10 @@
     <header>
         <nav>
             <ul>
-                <li><img class="cmd-icon" src="resources/img/cmd.png"><a>github:\samir.starlabs\index.html</a> <img class="anuloje-x" src="resources/img/anuloje.svg"></li>
+                <li class="first-tab"><img class="cmd-icon" src="resources/img/cmd.png"><a>github:\samir.starlabs\index.html</a> <img onclick="closeTab()" class="anuloje-x" src="resources/img/anuloje.svg"></li>
+                <li class="second-tab" id="secondtab"><img class="cmd-icon" src="resources/img/cmd.png"><a>github:\samir.starlabs\index.html</a> <img onclick="closeTab()" class="anuloje-x" src="resources/img/anuloje.svg"></li>
             </ul>
-            <img class="shtoje-x" src="resources/img/anuloje.svg">
+            <img onclick="tabSwitch()" id="shto" class="shtoje-x" src="resources/img/anuloje.svg">
         </nav>
 
         <img onclick="closeFunction()" class="mshele-x" src="resources/img/anuloje.svg">

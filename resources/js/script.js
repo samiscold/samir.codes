@@ -17,6 +17,28 @@ function closeFunction() {
 
 }
 
+function tabSwitch() {
+var x = document.getElementById("secondtab");
+var shto = document.getElementById("shto");
+if(x.style.display == 'none') {
+    x.style.display = 'block';
+}
+else {
+x.style.display = "block";
+}
+
+}
+
+function closeTab() {
+    var x = document.getElementById("secondtab");
+    if(x.style.display == 'block') {
+        x.style.display = 'none';
+    }
+    else{
+    x.style.display = "none";
+    }
+}
+
 
 function test() {
     var fixappend = document.getElementsByClassName('second-text')[0];
