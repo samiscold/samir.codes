@@ -11,12 +11,11 @@
 </head>
 
 <body>
-
+<div id="element" onmouseover="showtab()"></div></div>
     <header>
         <nav>
-            <ul>
-                <li class="first-tab"><img class="cmd-icon" src="resources/img/cmd.png"><a>github:\samir.starlabs\index.html</a> <img onclick="closeTab()" class="anuloje-x" src="resources/img/anuloje.svg"></li>
-                <li class="second-tab" id="secondtab"><img class="cmd-icon" src="resources/img/cmd.png"><a>github:\samir.starlabs\index.html</a> <img onclick="closeTab()" class="anuloje-x" src="resources/img/anuloje.svg"></li>
+            <ul class="abc">
+                <li id="listid" class="first-tab"><img class="cmd-icon" id="cmdicon" src="resources/img/cmd.png"><a id="atext" >github:\samir.starlabs\index.html</a> <img onclick="closeTab()" id="anulojex" class="anuloje-x" src="resources/img/anuloje.svg"></li>
             </ul>
             <img onclick="tabSwitch()" id="shto" class="shtoje-x" src="resources/img/anuloje.svg">
         </nav>
@@ -65,9 +64,11 @@
                 <div class="question">?</div>
 
 
-                
-              <input class="cmd-input" type="text"  id="result" placeholder="search something">
-              <input onclick="myFunction()" value="search">
+                <div class="inputs">
+                    <input class="cmd-input" type="text"  id="result" placeholder="search something">
+                    <input id="click" class="search-input" onclick="myFunction()" value="search">
+                </div>
+   
 
         </section>
 
