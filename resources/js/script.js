@@ -1,10 +1,10 @@
 document.getElementById("result")
-    .addEventListener("keyup", function(event) {
-    event.preventDefault();
-    if (event.keyCode === 13) {
-        document.getElementById("click").click();
-    }
-});
+    .addEventListener("keyup", function (event) {
+        event.preventDefault();
+        if (event.keyCode === 13) {
+            document.getElementById("click").click();
+        }
+    });
 
 const pjat = document.querySelectorAll('p'); // i merr i shtin array
 
@@ -24,10 +24,11 @@ function closeFunction() {
 
 }
 
+var counter = 0;
 
 function tabSwitch() {
 
-
+    //append the cmd icon and x icon
     var img = document.createElement("img");
     img.src = "resources/img/anuloje.svg";
 
@@ -35,53 +36,50 @@ function tabSwitch() {
     img2.src = "resources/img/cmd.png";
 
     img.className = 'anuloje-x';
+  
     img.id = "anulojex";
-    img.onclick =  closeNewTab;
+    img.onclick = closeNewTab;
 
     img2.className = 'cmd-icon2';
 
 
+    // append the li nav
     var ulLocation = document.getElementsByClassName('abc')[0];
     var whereTab = document.getElementById('listid');
 
     var addTab = document.createElement('li');
-    addTab.className = 'first-tab';
-    addTab.id = "listid";
-
     addTab.className = 'active';
 
+    for(let i =0; i<10; i++) {
+
+        addTab.innerHTML = "github:\samir.starlabs\blank";
+        addTab.appendChild(img2);
+        ulLocation.appendChild(addTab);
+        addTab.appendChild(img);
+        addTab.className = 'active ' + i;
+        addTab.id = "listid";
         
-    
-    // addTab.style.display = 'block';
+    }
 
 
 
-    // for (let i = 0; i < ulLocation.length; i++) {
-    //     addTab[i].classList.remove("active");
-    //   }
-    addTab.innerHTML = "github:\samir.starlabs\blank";
-    addTab.appendChild(img2);
+    // addTab.innerHTML = "github:\samir.starlabs\blank";
+    // addTab.appendChild(img2);
 
-    ulLocation.appendChild(addTab);
-    addTab.appendChild(img);
-
-
-    // var x = document.getElementById("secondtab");
-    // var shto = document.getElementById("shto");
-    // if(x.style.display == 'none') {
-    //     x.style.display = 'block';
-    // }
-    // else {
-    // x.style.display = "block";
-    // }
+    // ulLocation.appendChild(addTab);
+    // addTab.appendChild(img);
 
     
+
+ // onclick counter ++ function
 }
 
 
 
 
-
+function closeTab(event) {
+    event.target.closest('li.tab').remove();
+ }
 
 function closeTab() {
     var whereTab = document.getElementById('listid');
@@ -101,32 +99,31 @@ function showtab() {
     var showElement = document.getElementById("element");
     var getHeader = document.querySelector('header');
 
-   showElement.addEventListener("mouseover", event => {
-    getHeader.style.visibility = "visible";
+    showElement.addEventListener("mouseover", event => {
+        getHeader.style.visibility = "visible";
 
 
-  });
-  
+    });
 
-  showElement.addEventListener("mouseout", event => {
-    getHeader.style.visibility = "invisible";
 
-  });
-  
+    showElement.addEventListener("mouseout", event => {
+        getHeader.style.visibility = "invisible";
+
+    });
+
 
 }
 
 function closeNewTab() {
-    for (i = 0; i < 100; i++) {
-        var aktiv = document.getElementsByClassName('active')[i];
+        var aktiv = document.getElementsByClassName('active')[0];
 
-    if (aktiv.style.display == 'block') {
-        aktiv.style.display = 'none';
-    } else {
-        aktiv.style.display = "none";
-    }
+        // if (aktiv.style.display == 'block') {
+        //     aktiv.style.display = 'none';
+        // } else {
+        //     aktiv.style.display = "none";
+        // }
+        event.target.closest('li').remove();
 
-    }
 }
 
 function test() {
@@ -152,6 +149,11 @@ function myFunction() {
         return;
     }
 
+    if (inputi === "get_blog()") {
+        window.open("blog.html", "_self");
+        return;
+    }
+
 
 
     // if (inputi === "cls"){
@@ -173,7 +175,7 @@ function myFunction() {
     } else {
 
 
-        var komandat = [' \"cls\" to clear', '\"color a\" to change the color']
+        var komandat = [' \"cls\" to clear', '\"color a\" to change the color', '\"get_blog()\" to go to blog page'];
         test();
         abc.innerHTML += "<span> '" + inputi + "' </span> is not recognized as an internal <br> or external command, please try: <br> <span>" + komandat[random(0, komandat.length)] + "</span> <br><br>";
 
