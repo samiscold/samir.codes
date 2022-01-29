@@ -14,10 +14,12 @@
 
     <header>
 
+
+        <!--tabs + new tabs-->
         <nav>
             <ul class="abc">
                 <li id="listid" class="first-tab"><img class="cmd-icon" id="cmdicon" src="resources/img/cmd.png">
-                    <a id="atext">github:\samir.starlabs\index.html</a> 
+                    <a id="atext">github:\samir.starlabs\index.html</a>
                     <img onclick="closeTab()" id="anulojex" class="anuloje-x" src="resources/img/anuloje.svg">
                 </li>
             </ul>
@@ -29,13 +31,33 @@
     </header>
 
 
+
+    <!-- all available commands list-->
+    <div onclick="displayCommands()" class="question">?</div>
+
+    <div class="overlay">
+        <div class="commands">
+            <p>"color a" to change the color</p>
+            <p>"get_blog()" go to blogpager</p>
+            <p>"get_index()" go to homepage</p>
+            <p>"cls" : to clear</p>
+        </div>
+    </div>
+
+    </div>
+
+
     <main>
         <section class="first-section">
 
-            <div class="second-text">
+            <div class="section-text">
                 <p class="helloo">samir.codes [Version 1.0]</p>
                 <p class="hello">(c) samir. All rights reserved. </p>
                 <p class="hello">github:\samir.starlabs\index.html</p>
+                <p class="hello">> After a couple of stackoverflow downvotes and some caffeine, came up with this from
+                    scratch</p>
+            </div>
+
 
                 <div id="aboutme" class="about-me">
 
@@ -46,10 +68,10 @@
 
                     <div class="text-me">
                         <h1> Hello World</h1>
-                        <span>I am Samir Vllaço, a Computer Science Student from Prizren. <br>
-                            Passionate about Web and OOP.
+                        <span>I am Samir Vllaço, a Computer Science Student & Technology Enthusiast. <br>
+                            Passionate about Web, OOP and Cyber-Security.
                             Currently learning Javascript & PHP. <br>
-                            In my free time bla bla bla and drink ☕.
+                            In my free time I listen to tech podcasts and drink ☕.
                         </span>
                         <div class="contact">
                             <i class='fa fa-linkedin'></i><a href="https://linkedin.com/in/samirvllaço "
@@ -65,12 +87,9 @@
 
 
                 <p id="wronginput"></p>
-            </div>
 
 
 
-
-            <div class="question">?</div>
 
 
             <div class="inputs">
@@ -87,7 +106,7 @@
 
 
         </section>
-        <section></section>
+
 
     </main>
 
