@@ -105,7 +105,7 @@ function closeNewTab() {
 }
 
 function test() {
-    var fixappend = document.getElementsByClassName('second-text')[0];
+    var fixappend = document.getElementsByClassName('print-here')[0];
     var paragraph = document.createElement('p');
     paragraph.id = "wronginput";
     fixappend.appendChild(paragraph);
@@ -137,6 +137,12 @@ function myFunction() {
         return;
     }
 
+    if(inputi === "get_skills()") {
+       var testtest = document.getElementsByClassName("skills")[0];
+        testtest.style.display = "block";
+        return;
+    }
+
 
 
     // if (inputi === "cls"){
@@ -158,7 +164,7 @@ function myFunction() {
     } else {
 
 
-        var komandat = [' \"cls\" to clear', '\"color a\" to change the color', '\"get_blog()\" to go to blog page'];
+        var komandat = [' \"cls\" to clear', '\"color a\" to change the color', '\"get_blog()\" to go to blog page', "\"get_index()\" to go to home page"];
         test();
         abc.innerHTML += "<span> '" + inputi + "' </span> is not recognized as an internal <br> or external command, please try: <br> <span>" + komandat[random(0, komandat.length)] + "</span> <br><br>";
 
