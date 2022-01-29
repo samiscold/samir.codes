@@ -77,42 +77,23 @@ function tabSwitch() {
 
 
 
-function closeTab(event) {
-    event.target.closest('li.tab').remove();
- }
+// function closeTab(event) {
+//     event.target.closest('li.tab').remove();
+//  }
 
-function closeTab() {
-    var whereTab = document.getElementById('listid');
-    var getHeader = document.querySelector('header');
-    if (whereTab.style.display == 'block') {
-        whereTab.style.display = 'none';
-    } else {
-        whereTab.style.display = "none";
-        getHeader.style.display = "none";
-        closeFunction();
+// function closeTab() {
+//     var whereTab = document.getElementById('listid');
+//     var getHeader = document.querySelector('header');
+//     if (whereTab.style.display == 'block') {
+//         whereTab.style.display = 'none';
+//     } else {
+//         whereTab.style.display = "none";
+//         getHeader.style.display = "none";
+//         closeFunction();
 
-    }
+//     }
 
-}
-
-function showtab() {
-    var showElement = document.getElementById("element");
-    var getHeader = document.querySelector('header');
-
-    showElement.addEventListener("mouseover", event => {
-        getHeader.style.visibility = "visible";
-
-
-    });
-
-
-    showElement.addEventListener("mouseout", event => {
-        getHeader.style.visibility = "invisible";
-
-    });
-
-
-}
+// }
 
 function closeNewTab() {
         var aktiv = document.getElementsByClassName('active')[0];
