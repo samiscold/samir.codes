@@ -49,3 +49,5 @@ $ domain: https://samir.codes
 > GitHub [@samiscold](https://github.com/samiscold) &nbsp;&middot;&nbsp;
 > LinkedIn [@Samir Vllaço](https://www.linkedin.com/in/samirvlla%C3%A7o/)
 
+Open-Source -  feel free to contribute my work to improve, and use it on your own project!
+
