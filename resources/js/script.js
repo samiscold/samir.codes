@@ -179,13 +179,5 @@ function displayCommands() {
 	
 
 
-function fixTitles() {
-	var setTitle = document.getElementById("app");
-	document.getElementById("app").innerText = document.title;
-}
-
-window.onload = fixTitles();
-
-
 
 
