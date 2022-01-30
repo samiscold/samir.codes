@@ -164,7 +164,7 @@ function myFunction() {
 }
 
 function displayCommands() {
-	var getdisplay = document.getElementsByClassName('overlay');
+	var getdisplay = document.getElementsByClassName('overlay')[0];
 	getdisplay.style.display = "block";
 
 	window.onclick = function(event) {
