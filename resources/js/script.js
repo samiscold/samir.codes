@@ -164,7 +164,7 @@ function myFunction() {
 }
 
 function displayCommands() {
-	var getdisplay = document.getElementsByClassName('overlay')[0];
+	var getdisplay = document.getElementsByClassName('overlay');
 	getdisplay.style.display = "block";
 
 	window.onclick = function(event) {
@@ -173,3 +173,19 @@ function displayCommands() {
 		}
 	}
 }
+
+
+	
+	
+
+
+function fixTitles() {
+	var setTitle = document.getElementById("app");
+	document.getElementById("app").innerText = document.title;
+}
+
+window.onload = fixTitles();
+
+
+
+
