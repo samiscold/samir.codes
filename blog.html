@@ -11,22 +11,23 @@
 </head>
 
 <body>
-    <div id="element" onmouseover="showtab()"></div>
-    </div>
+
     <header>
         <nav>
             <ul class="abc">
-                <li id="listid" class="first-tab"><img class="cmd-icon" id="cmdicon" src="resources/img/cmd.png"><a
-                        id="atext">github:\samir.starlabs\blog.html</a> <img onclick="closeTab()" id="anulojex"
-                        class="anuloje-x" src="resources/img/anuloje.svg"></li>
+                <li id="listid" class="first-tab">
+                    <img class="cmd-icon" id="cmdicon" src="resources/img/cmd.png">
+                    <a id="atext">github:\samir.starlabs\blog.html</a>
+                    <img onclick="closeTab()" id="anulojex" class="anuloje-x" src="resources/img/anuloje.svg">
+                </li>
             </ul>
             <img onclick="tabSwitch()" id="shto" class="shtoje-x" src="resources/img/anuloje.svg">
         </nav>
-
         <img onclick="closeFunction()" class="mshele-x" src="resources/img/anuloje.svg">
     </header>
 
     <main>
+
         <div class="overlay">
             <div class="commands">
                 <p>"get_blog()" go to blogpager</p>
@@ -34,113 +35,76 @@
                 <p>"get_skills()" go to skills</p>
                 <p>"color a" to change the color</p>
                 <p>"cls" : to clear</p>
-               
             </div>
         </div>
-    
-        <section class="first-section">
 
+        <section class="first-section">
             <div class="second-text">
                 <p class="helloo">samir.codes [Version 1.0]</p>
                 <p class="hello">(c) samir. All rights reserved. </p>
                 <p class="hello">github:\samir.starlabs\blog.html</p>
-
                 <div id="aboutme" class="about-me">
                     <div class="img-border">
                         <img class="pfp" src="resources/img/pfpdone.png" alt="">
                     </div>
-
-
                     <div class="text-me">
                         <h1> Hello Blog!</h1>
                         <h5>get_index() to go home.</h5>
                     </div>
-
-                  
-
                 </div>
                 <div onclick="displayCommands()" class="question">?</div>
-
                 <p id="wronginput"></p>
-
                 <div class="inputs">
                     <input class="cmd-input" type="text" id="result" placeholder="search something">
                     <input id="click" class="search-input" onclick="myFunction()" value="search">
                 </div>
-                <!-- <article>
-                    <h1>Article</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut enim lorem. Aenean consectetur magna quam, ac pharetra velit molestie vitae. Donec eros nisi, condimentum in nunc eget, rutrum faucibus orci. Aenean lacinia augue vel blandit ultricies. Quisque aliquet dui egestas consectetur aliquet. Etiam semper interdum sodales. Donec vehicula arcu rutrum nisi malesuada tincidunt convallis vitae magna. Nam in tortor commodo, molestie ligula vitae, volutpat justo.</p>
-                    <p>Phasellus velit lectus, sagittis vitae nunc sit amet, elementum convallis nibh. Donec urna purus, faucibus a turpis a, blandit eleifend sem. Vivamus blandit, felis eu sodales cursus, elit mauris iaculis enim, quis volutpat purus massa in sapien. Fusce a enim felis. Aliquam in nulla leo. Aliquam at lacinia lectus. Nunc imperdiet dui in tortor tincidunt rutrum. Etiam porttitor metus convallis, ornare nisl a, interdum nisl. Integer lacinia quis enim nec ultrices. Mauris eget ante magna. Vestibulum volutpat adipiscing lorem et dignissim. Suspendisse sed semper ligula. Donec consequat auctor luctus. Quisque sodales, ipsum id facilisis cursus, lectus purus tincidunt massa, eu mollis odio odio ac dui. Suspendisse potenti.</p>
-                    <p>Nam vitae ante in augue ultrices volutpat in non turpis. Ut mattis tellus vitae condimentum sagittis. Aenean porta nisi nulla, et sagittis odio consectetur vestibulum. Proin convallis felis ut nunc aliquam auctor. Praesent aliquet ut dui fermentum viverra. Curabitur tincidunt diam tellus, aliquet porttitor nisl accumsan ut. Fusce tincidunt lorem sit amet arcu porta consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse potenti. Maecenas aliquet neque a risus euismod faucibus. Aenean sit amet velit bibendum, iaculis orci in, interdum sem.
-                </p>
-                    <p>Phasellus sed tortor eget odio eleifend congue non eu felis. Praesent cursus vehicula bibendum. Sed lacinia eget erat a mattis. Nulla et nisl nulla. Phasellus ac nisl augue. Sed erat quam, iaculis consectetur ante quis, imperdiet fermentum magna. Vivamus porttitor quis mi ac volutpat. Etiam libero nibh, varius id luctus sit amet, facilisis convallis erat. Nulla facilisi.</p>
-                  </article> -->
 
-                  <div class="row">
-                     
-                        <div class="card">
-                    <a href="#">
-
+                <!--blog content-->
+                <div class="row">
+                    <div class="card">
+                        <a href="#">
                             <h2>Health tips for programmers.</h2>
                             <h5>How to stay healthy while staying inside!, Jan 29, 2022</h5>
                             <img style="width: 100%; height:200px" src="resources\img\ks-code.jpg" alt="">
-
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                          </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                    </div>
                     </a>
-               
-
-                        <div class="card">
-                    <a href="#">
+                    <div class="card">
+                        <a href="#">
                             <h2>Best repost on github that you shouldn't miss</h2>
                             <h5>top star github repos with MIT license, Jan 29, 2022</h5>
                             <img style="width: 100%; height:200px" src="resources\img\ks-code.jpg" alt="">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                          </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                    </div>
                     </a>
-                   
-                        <div class="card">
-                    <a href="#">
+                    <div class="card">
+                        <a href="#">
                             <h2>Why you should update your plugins after recent Wordpress attack</h2>
                             <h5>Acesspress hacked, Jan 29, 2022</h5>
                             <img style="width: 100%; height:200px" src="resources\img\ks-code.jpg" alt="">
-
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
-                                scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-                          </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries,</p>
+                    </div>
                     </a>
-                  
-                  </div>
-
+                </div>
             </div>
 
-
-
-
-
-
-
-
         </section>
 
-        <section class="second-section">
-
-
-
-
-        </section>
-        <section>
-            
-</section>
-        <section></section>
-        <section></section>
-        <section></section>
     </main>
 
-
     <footer>
-        <p>Author: Samir Vllaço © - Made with 🖤 and ☕.<br>
-            <a href="mailto:hege@example.com">vllacosamir@gmail.com</a></p>
+        <p>Author: Samir Vllaço © - Made with 🖤 and ☕. <br>
+            <a href="mailto:hege@example.com">vllacosamir@gmail.com</a>
+        </p>
         <div class="go-to-top"></div>
     </footer>
 
