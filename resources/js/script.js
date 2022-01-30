@@ -138,7 +138,7 @@ function myFunction() {
     }
 
     if(inputi === "get_skills()") {
-       var testtest = document.getElementsByClassName("skills")[0];
+       var testtest = document.getElementsByClassName("skillss")[0];
         testtest.style.display = "block";
         return;
     }
@@ -154,6 +154,7 @@ function myFunction() {
 
 
     var abc = document.getElementById("wronginput");
+    var testtest = document.getElementsByClassName("skillss")[0];
 
     if (inputi === "cls") {
         abc.parentNode.removeChild(abc);
@@ -161,6 +162,8 @@ function myFunction() {
             pjat[i].style.color = 'white'; // ja qet krejtve emrin 1 ka 1 loop
         }
 
+        testtest.parentNode.removeChild(testtest);
+        
     } else {
 
 
