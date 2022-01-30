@@ -155,15 +155,14 @@ function myFunction() {
 
     var abc = document.getElementById("wronginput");
     var testtest = document.getElementsByClassName("skillss")[0];
-
     if (inputi === "cls") {
         abc.parentNode.removeChild(abc);
         for (let i = 0; i < pjat.length; i++) {
             pjat[i].style.color = 'white'; // ja qet krejtve emrin 1 ka 1 loop
         }
 
-        testtest.parentNode.removeChild(testtest);
-        
+        testtest.style.display = "none";
+
     } else {
 
 
