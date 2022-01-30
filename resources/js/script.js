@@ -51,7 +51,7 @@ function tabSwitch() {
     addTab.className = 'active';
 
 
-        addTab.innerHTML = "github:\samir.starlabs\blank";
+        addTab.innerHTML = "github:\samir.starlabs\\blank";
         addTab.appendChild(img2);
         ulLocation.appendChild(addTab);
         addTab.appendChild(img);
@@ -105,10 +105,16 @@ function closeNewTab() {
 }
 
 function test() {
+    var abc = document.getElementById("wronginput");
+  
+
     var fixappend = document.getElementsByClassName('print-here')[0];
     var paragraph = document.createElement('p');
-    paragraph.id = "wronginput";
-    fixappend.appendChild(paragraph);
+        paragraph.id = "wronginput";
+        fixappend.appendChild(paragraph);
+    
+
+
 }
 
 
@@ -155,19 +161,24 @@ function myFunction() {
 
     var abc = document.getElementById("wronginput");
     var testtest = document.getElementsByClassName("skillss")[0];
+    var fixappend = document.getElementsByClassName('print-here')[0];
+
     if (inputi === "cls") {
         abc.parentNode.removeChild(abc);
+
+        testtest.style.display = "none";
         for (let i = 0; i < pjat.length; i++) {
             pjat[i].style.color = 'white'; // ja qet krejtve emrin 1 ka 1 loop
         }
+        // abc.parentNode.removeChild(abc);
+        
 
-        testtest.style.display = "none";
+
 
     } else {
 
-
-        var komandat = [' \"cls\" to clear', '\"color a\" to change the color', '\"get_blog()\" to go to blog page', "\"get_index()\" to go to home page"];
         test();
+        var komandat = [' \"cls\" to clear', '\"color a\" to change the color', '\"get_blog()\" to go to blog page', "\"get_index()\" to go to home page"];
         abc.innerHTML += "<span> '" + inputi + "' </span> is not recognized as an internal <br> or external command, please try: <br> <span>" + komandat[random(0, komandat.length)] + "</span> <br><br>";
 
     }
