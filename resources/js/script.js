@@ -1,11 +1,10 @@
 // track the submit button with enter
-document.getElementById("result").addEventListener("keyup", function(event) {
-		event.preventDefault();
-		if (event.keyCode === 13) {
-			document.getElementById("click").click();
-		}
-	});
-
+document.getElementById("result").addEventListener("keyup", function (event) {
+	event.preventDefault();
+	if (event.keyCode === 13) {
+		document.getElementById("click").click();
+	}
+});
 
 function random(min, max) {
 	return Math.floor(Math.random() * (max - min) + min);
@@ -13,14 +12,10 @@ function random(min, max) {
 
 
 function closeFunction() {
-	var r = confirm("https://www.youtube.com/watch?v=kaFTnw0xUq8");
+	var r = confirm("👨‍💻bye");
 	if (r == true) {
 		x = window.close();
-
-	} else {
-		x = "Cancel was pressed";
 	}
-
 }
 
 var counter = 0;
@@ -80,14 +75,7 @@ function closeTab() {
 
 function closeNewTab() {
 	var aktiv = document.getElementsByClassName('active')[0];
-
-	// if (aktiv.style.display == 'block') {
-	//     aktiv.style.display = 'none';
-	// } else {
-	//     aktiv.style.display = "none";
-	// }
 	event.target.closest('li').remove();
-
 }
 
 function test() {
@@ -107,13 +95,13 @@ function myFunction() {
 	console.log(inputi);
 
 
-	var c = document.getElementById("wronginput");  
-    const pjat = document.querySelectorAll('p');
+	var c = document.getElementById("wronginput");
+	const pjat = document.querySelectorAll('p');
 
 
 	if (inputi === "color a") {
 		for (let i = 0; i < pjat.length; i++) {
-			pjat[i].style.color = 'lime'; 
+			pjat[i].style.color = 'lime';
 		}
 
 		return;
@@ -135,10 +123,6 @@ function myFunction() {
 		return;
 	}
 
-
-
-
-
 	var abc = document.getElementById("wronginput");
 	var testtest = document.getElementsByClassName("skillss")[0];
 	var fixappend = document.getElementsByClassName('print-here')[0];
@@ -148,17 +132,14 @@ function myFunction() {
 
 		testtest.style.display = "none";
 		for (let i = 0; i < pjat.length; i++) {
-			pjat[i].style.color = 'white'; 
+			pjat[i].style.color = 'white';
 		}
-
-
 
 	} else {
 
 		test();
 		var komandat = [' \"cls\" to clear', '\"color a\" to change the color', '\"get_blog()\" to go to blog page', "\"get_index()\" to go to home page"];
 		abc.innerHTML += "<span> '" + inputi + "' </span> is not recognized as an internal <br> or external command, please try: <br> <span>" + komandat[random(0, komandat.length)] + "</span> <br><br>";
-
 	}
 
 }
@@ -167,17 +148,9 @@ function displayCommands() {
 	var getdisplay = document.getElementsByClassName('overlay')[0];
 	getdisplay.style.display = "block";
 
-	window.onclick = function(event) {
+	window.onclick = function (event) {
 		if (event.target == getdisplay) {
 			getdisplay.style.display = "none";
 		}
 	}
 }
-
-
-	
-	
-
-
-
-
