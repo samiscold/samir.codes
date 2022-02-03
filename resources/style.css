@@ -538,6 +538,13 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin: 3% 1%;
+	flex-direction: column;
+}
+
+.go-to-top {
+	width: 20px;
+	height: auto;
 }
 
 @media only screen and (max-width: 768px) {
