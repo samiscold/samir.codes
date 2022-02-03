@@ -45,7 +45,7 @@ function tabSwitch() {
 	addTab.className = 'active';
 
 
-	addTab.innerHTML = "github:\samir.starlabs\\blank";
+	addTab.innerHTML = "github:\samir.codes\\blank";
 	addTab.appendChild(img2);
 	ulLocation.appendChild(addTab);
 	addTab.appendChild(img);
@@ -153,4 +153,8 @@ function displayCommands() {
 			getdisplay.style.display = "none";
 		}
 	}
+}
+
+function goTop() {
+	window.scrollTo(0,0);
 }
