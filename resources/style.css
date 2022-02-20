@@ -30,6 +30,11 @@ nav {
 	align-self: end;
 }
 
+#particles-js {
+	display: inline;
+	height: 100vh;
+	position: absolute;
+}
 
 /* nav icons */
 
@@ -534,7 +539,7 @@ body.loaded {
 	;
 }
 
-footer {
+.footer-info{
 	display: flex;
 	justify-content: center;
 	align-items: center;
