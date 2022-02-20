@@ -213,7 +213,7 @@ textarea:focus {
 .hello,
 .helloo {
 	color: #CCCCCB;
-	font-family: 'Lucida Sans';
+	font-family: 'lucida', sans-serif;
 	font-size: 1rem;
 	margin: 10px 0 0 10px;
 	white-space: nowrap;
