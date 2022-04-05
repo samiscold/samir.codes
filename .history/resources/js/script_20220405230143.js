@@ -205,7 +205,7 @@ function test() {
 	var fixappend = document.getElementsByClassName('print-here')[0];
 	var paragraph = document.createElement('p');
 	paragraph.id = "wronginput";
-	paragraph.className = "ggg"
+	paragraph.id = "wronginput";
 	fixappend.appendChild(paragraph);
 
 }

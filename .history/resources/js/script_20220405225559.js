@@ -205,7 +205,6 @@ function test() {
 	var fixappend = document.getElementsByClassName('print-here')[0];
 	var paragraph = document.createElement('p');
 	paragraph.id = "wronginput";
-	paragraph.className = "ggg"
 	fixappend.appendChild(paragraph);
 
 }
@@ -216,8 +215,8 @@ function myFunction() {
 	console.log(inputi);
 
 
-	// var c = document.getElementById("wronginput");
-	const pjat = document.querySelectorAll('.ggg');
+	var c = document.getElementById("wronginput");
+	const pjat = document.querySelectorAll('p').getElementsByClassName('');
 	
 
 	if (inputi === "color a") {
