@@ -34,8 +34,7 @@ nav {
 	display: inline;
 	height: 100vh;
 	position: absolute;
-	z-index: -99999;
-  }
+}
 
 /* nav icons */
 
