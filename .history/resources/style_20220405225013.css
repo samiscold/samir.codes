@@ -6,10 +6,6 @@
 	font-display: swap;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	background: #0C0D0D;
 	color: #CCCCCB;

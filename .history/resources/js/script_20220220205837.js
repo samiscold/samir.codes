@@ -114,11 +114,7 @@ particlesJS('particles-js',
   
 );
   
-  // smooth 
-
-  document.querySelector('top').window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-
-
+  
   // track the submit button with enter
 document.getElementById("result").addEventListener("keyup", function (event) {
 	event.preventDefault();

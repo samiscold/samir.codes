@@ -6,17 +6,14 @@
 	font-display: swap;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 body {
 	background: #0C0D0D;
 	color: #CCCCCB;
 	font-family: 'lucida', sans-serif;
 	margin: 0;
 	padding: 0;
-
+	scroll-behavior: smooth;
+	
 }
 
 header {
